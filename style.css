@@ -1,0 +1,482 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+/* ----------------------------------------------------- */
+
+header {
+  width: 100%;
+  color: white;
+}
+
+.header-image-div {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./images/desktop/image-header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.header-content-div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0 1rem;
+  padding-bottom: 2rem;
+}
+
+.header-navbar-div {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hide {
+  display: flex;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  padding: 0.7rem 1.5rem;
+  border-radius: 2rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+}
+
+nav ul li:hover {
+  opacity: 0.8;
+}
+
+.active {
+  background-color: white;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+}
+
+.active a {
+  color: hsl(212, 27%, 19%);
+}
+
+.menu {
+  display: none;
+}
+
+header h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4rem;
+  letter-spacing: 10px;
+  margin-bottom: 3rem;
+  font-family: "Fraunces", serif;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 640px) {
+  .header-content-div {
+    padding-bottom: 5rem;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 8px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* ----------------------------------------------------- */
+
+main {
+  width: 100%;
+}
+
+.gallary {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.gallary-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallary-div .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  width: 60%;
+  padding: 2rem;
+}
+
+.gallary-div h2 {
+  color: hsl(212, 27%, 19%);
+  font-size: 3rem;
+  font-family: "Fraunces", serif;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.gallary-div p {
+  color: hsl(232, 10%, 55%);
+  font-family: "Barlow", sans-serif;
+  line-height: 1.5;
+}
+
+.gallary-div a {
+  color: hsl(212, 27%, 19%);
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.gallary-div a:hover {
+  opacity: 0.8;
+}
+
+.gallary-image {
+  width: 100%;
+  height: 100%;
+}
+
+.inner-text {
+  position: relative;
+}
+
+.desc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.desc h3 {
+  font-family: "Fraunces", serif;
+  font-weight: 800;
+  font-size: 2rem;
+  color: hsl(168, 41%, 31%);
+  margin-bottom: 1rem;
+}
+
+.desc p {
+  max-width: 75%;
+  color: hsl(168, 34%, 41%);
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1440px) {
+  .gallary-div .content {
+    width: 70%;
+  }
+
+  .gallary-div h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .gallary-div .content {
+    width: 90%;
+  }
+
+  .gallary-div h2 {
+    font-size: 2rem;
+  }
+
+  .gallary-div p {
+    font-size: 14px;
+  }
+
+  .gallary-div a {
+    font-size: 12px;
+  }
+
+  .desc h3 {
+    font-size: 1.5rem;
+  }
+
+  .desc p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .gallary-div .content {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .gallary-div h2 {
+    font-size: 1.8rem;
+  }
+
+  .gallary-div p {
+    font-size: 13px;
+  }
+
+  .gallary-div a {
+    font-size: 11px;
+  }
+
+  .desc h3 {
+    margin-bottom: 0.5rem;
+  }
+
+  .desc p {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .gallary {
+    grid-template-columns: auto;
+  }
+
+  .gallary-div .content {
+    width: 80%;
+    padding: 6rem 0;
+  }
+
+  .start {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+
+  .desc h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .desc p {
+    font-size: 16px;
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .gallary-div .content {
+    width: 100%;
+    padding: 4rem 2rem;
+  }
+
+  .desc h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .desc p {
+    font-size: 14px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .gallary-div .content {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .desc {
+    padding: 0 1.5rem;
+    overflow-y: hidden;
+  }
+
+  .desc h3 {
+    font-size: 1.2rem;
+  }
+
+  .desc p {
+    font-size: 12px;
+  }
+}
+
+/* ----------------------------------------------------- */
+
+.testimonials-container {
+  width: 100%;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonials-container h3 {
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  color: hsl(210, 4%, 67%);
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.testimonials-flex {
+  padding: 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.testimonials-flex .testimonials {
+  width: 25%;
+  min-width: 350px;
+  padding: 2rem 1rem;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.testimonials p {
+  font-family: "Barlow", sans-serif;
+  color: hsl(167, 40%, 24%);
+}
+
+.testimonials .person {
+  font-family: "Fraunces", serif;
+  color: hsl(167, 40%, 24%);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.testimonials .title {
+  color: rgb(172, 172, 172);
+}
+
+.profile {
+  width: 4rem;
+  height: 4rem;
+}
+
+.profile-image {
+  border-radius: 2rem;
+}
+
+@media screen and (max-width: 640px) {
+  .testimonials-flex .testimonials {
+    min-width: 100%;
+  }
+
+  .testimonials p {
+    max-width: 350px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .testimonials-container h3 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .testimonials-flex {
+    padding: 0;
+  }
+}
+
+/* ----------------------------------------------------- */
+.image-div {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+@media screen and (max-width: 640px) {
+  .image-div {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+/* ----------------------------------------------------- */
+
+footer {
+  background-color: #9bdccc;
+}
+
+.footer-content {
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer nav ul li {
+  color: hsl(168, 34%, 41%);
+}
+
+.icon-div {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.icon-div a:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 400px) {
+  nav ul li {
+    padding: 0.4rem 1rem;
+    font-size: 14px;
+  }
+}
+/* ----------------------------------------------------- */
