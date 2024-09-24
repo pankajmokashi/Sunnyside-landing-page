@@ -20,7 +20,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://your-solution-url.com](https://github.com/pankajmokashi/Sunnyside-landing-page)
+- Solution URL: [https://github.com/pankajmokashi/Sunnyside-landing-page](https://github.com/pankajmokashi/Sunnyside-landing-page)
 - Live Site URL: [https://sunnyside-responsive-page.netlify.app/](https://sunnyside-responsive-page.netlify.app/)
 
 
